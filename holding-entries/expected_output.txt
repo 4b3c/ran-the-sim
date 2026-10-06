@@ -1,0 +1,51 @@
+== airspeed: KIAS taken as KCAS, standard day ==
+200 KIAS, sea level, 1 min: 200.0 KTAS
+200 KIAS, 6,000 ft, 1 min: 218.1 KTAS
+265 KIAS, 15,000 ft, 1.5 min: 329.2 KTAS
+265 KIAS, 20,000 ft, 1.5 min: 355.2 KTAS
+265 KIAS, 25,000 ft, 1.5 min: 383.8 KTAS
+sensitivity, 265 KIAS at 15,000 ft if KIAS is 5 kt off KCAS: 323.2 / 335.3 KTAS
+
+== racetrack geometry (no wind) ==
+200 KIAS, sea level, 1 min: 200 KTAS, turn 3.00 deg/s at 28.8 deg bank, radius 1.06 nm, width 2.12 nm, straight legs 3.33 nm, length 5.46 nm, one 180 turn 60 s, one circuit 240 s
+200 KIAS, 6,000 ft, 1 min: 218 KTAS, turn 2.89 deg/s at 30.0 deg bank, radius 1.20 nm, width 2.40 nm, straight legs 3.64 nm, length 6.04 nm, one 180 turn 62 s, one circuit 245 s
+265 KIAS, 15,000 ft, 1.5 min: 329 KTAS, turn 1.92 deg/s at 30.0 deg bank, radius 2.74 nm, width 5.47 nm, straight legs 8.23 nm, length 13.70 nm, one 180 turn 94 s, one circuit 368 s
+265 KIAS, 20,000 ft, 1.5 min: 355 KTAS, turn 1.78 deg/s at 30.0 deg bank, radius 3.18 nm, width 6.37 nm, straight legs 8.88 nm, length 15.25 nm, one 180 turn 101 s, one circuit 383 s
+265 KIAS, 25,000 ft, 1.5 min: 384 KTAS, turn 1.64 deg/s at 30.0 deg bank, radius 3.72 nm, width 7.44 nm, straight legs 9.59 nm, length 17.03 nm, one 180 turn 110 s, one circuit 399 s
+
+== 360 entries, one per degree, 200 KIAS, sea level, 1 min (200 KTAS) ==
+direct    180 aircraft  fix to fix 229-284 s (median 240)  farthest onto nonholding side 1.41 nm  farthest past the fix along outbound 5.45 nm  failed 0
+teardrop   70 aircraft  fix to fix 188-193 s (median 192)  farthest onto nonholding side 0.44 nm  farthest past the fix along outbound 4.52 nm  failed 0
+parallel  110 aircraft  fix to fix 163-191 s (median 184)  farthest onto nonholding side 1.40 nm  farthest past the fix along outbound 4.39 nm  failed 0
+
+== 360 entries, one per degree, 265 KIAS, 15,000 ft, 1.5 min (329 KTAS) ==
+direct    180 aircraft  fix to fix 355-440 s (median 369)  farthest onto nonholding side 3.64 nm  farthest past the fix along outbound 13.70 nm  failed 0
+teardrop   70 aircraft  fix to fix 288-299 s (median 295)  farthest onto nonholding side 1.32 nm  farthest past the fix along outbound 11.34 nm  failed 0
+parallel  110 aircraft  fix to fix 248-292 s (median 282)  farthest onto nonholding side 3.62 nm  farthest past the fix along outbound 10.95 nm  failed 0
+
+== the boundary: 5 degrees either side of each line (200 KIAS, sea level, 1 min) ==
+heading 100: direct    fix to fix 232 s, farthest onto nonholding side 1.25 nm
+heading 105: direct    fix to fix 230 s, farthest onto nonholding side 1.34 nm
+heading 110: teardrop  fix to fix 188 s, farthest onto nonholding side 0.13 nm
+heading 115: teardrop  fix to fix 189 s, farthest onto nonholding side 0.17 nm
+heading 175: teardrop  fix to fix 193 s, farthest onto nonholding side 0.41 nm
+heading 180: parallel  fix to fix 191 s, farthest onto nonholding side -0.00 nm
+heading 185: parallel  fix to fix 191 s, farthest onto nonholding side 0.00 nm
+heading 285: parallel  fix to fix 165 s, farthest onto nonholding side 1.33 nm
+heading 290: direct    fix to fix 284 s, farthest onto nonholding side 0.69 nm
+heading 295: direct    fix to fix 281 s, farthest onto nonholding side 0.61 nm
+heading 360: direct    fix to fix 240 s, farthest onto nonholding side 0.00 nm
+
+== wind: 30 kt from the west; rollout error after one circuit ==
+200 KIAS, sea level, 1 min (200 KTAS), inbound correction 8.6 deg: k=0: +1.52  k=1: +1.00  k=2: +0.51  k=2.5: +0.28  k=3: +0.05  k=3.5: -0.17  k=4: -0.39  zero error at k = 3.10
+200 KIAS, 6,000 ft, 1 min (218 KTAS), inbound correction 7.9 deg: k=0: +1.56  k=1: +1.04  k=2: +0.55  k=2.5: +0.31  k=3: +0.08  k=3.5: -0.15  k=4: -0.36  zero error at k = 3.17
+265 KIAS, 15,000 ft, 1.5 min (329 KTAS), inbound correction 5.2 deg: k=0: +2.34  k=1: +1.57  k=2: +0.82  k=2.5: +0.46  k=3: +0.09  k=3.5: -0.27  k=4: -0.62  zero error at k = 3.13
+265 KIAS, 20,000 ft, 1.5 min (355 KTAS), inbound correction 4.8 deg: k=0: +2.46  k=1: +1.69  k=2: +0.95  k=2.5: +0.58  k=3: +0.21  k=3.5: -0.15  k=4: -0.51  zero error at k = 3.30
+265 KIAS, 25,000 ft, 1.5 min (384 KTAS), inbound correction 4.5 deg: k=0: +2.60  k=1: +1.83  k=2: +1.08  k=2.5: +0.71  k=3: +0.35  k=3.5: -0.02  k=4: -0.37  zero error at k = 3.48
+
+== the same, at other crosswinds: zero-error k at 15 / 30 / 60 kt ==
+200 KIAS, sea level, 1 min: 3.03 / 3.10 / 3.71
+200 KIAS, 6,000 ft, 1 min: 3.10 / 3.17 / 3.64
+265 KIAS, 15,000 ft, 1.5 min: 3.10 / 3.13 / 3.27
+265 KIAS, 20,000 ft, 1.5 min: 3.26 / 3.30 / 3.43
+265 KIAS, 25,000 ft, 1.5 min: 3.45 / 3.48 / 3.62
